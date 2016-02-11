@@ -1,0 +1,160 @@
+General Comments:
+	I have made an explicit decision to not allow the toe of the frog to have two names.
+	Due to my desire to design a project that has the ability to reference completely from
+	object based xml files, this made this difficult. Thus I am willing to take the few 
+	point hit, knowing that I have made a conscience decision to do so, I believe that 
+	my doing so is sound. My belief from the beginning, is that I wanted to make a project 
+	that was easily modifiable. I believe that I have done this. Within a matter of 
+	minutes, a programmer with these base files, could easily add objects, change room 
+	mappings, I was not willing to compromise the ability to do that by adding a second 
+	name.
+	You will find the extra feature that you required is satisfied by using "HELP".
+	I was originally trying to make this be able to be saved as well, and as much as 
+	I would like to do that right now, I have run out of time to do so., You may notice
+	large portions of commented out code to justify this.
+	
+How It works:
+	
+
+Class Game
+	static{}
+		Contains:
+			askUserForSavedGame{}
+			createMapIndices{}
+			generateRooms{}
+			generateItems{}
+			generatePlayer{}
+			generateDirectionMaps{}
+			set CurrentRoom
+		This method is specifically used to create rooms, objects, players, and all
+		their relative assignments, before the main method is run. The main is 
+		specifically meant to run the game and it's actions
+	main{}
+		Contains:
+			winCondition
+			printCurrentRoomDescription{}
+			performNextAction{}
+			winCheck{}
+		This is the overall method of navigation, enter new room, print that room's 
+		description, then while in that room, do as many actions in that room till 
+		either the winCheck is satisfied, or we move to another room.
+	winCheck{}
+		Meant to check if the game winning condition is met. This depends on the the 
+		fact that there can only be one room with a roomWinDescription. all other rooms
+		must have a roomWinDescription value of "", if this is not the case, the program
+		will end the program in a room that is not the room with the desired 
+		winCondition
+	performNextAction{}
+		This is a huge switch-case block, meant to be the largest way to navigate the 
+		input given from the user.
+	takeItemFromCurrentRoom{}
+		When we take an item from a room, we first add it to the inventory of our hero, 
+		then we remove it from our room.
+	dropItemIntoCurrentRoom{}
+		When we drop an item into a room, we put the item in the objects ArrayList, then 
+		remove it from the hero.inventory
+	printAvailableCommands{}
+		This is one of the first times we have a little issue, I could send the available
+		commands and have one big print statement.Instead, I decided to call 
+		printAvailable commands from the classes themselves.The first half, is based on
+		currentRoom.printAvailableCommands, hero.printAvailableCommands, and then takes
+		care of everything within Game. I could have used another method for that, but 
+		was a smidgen lazy. 
+	exitGame{}
+		give the option to save, and then exit the program.
+	saveGame{}
+		save the game, if I had been able to. Haven't implemented this yet.
+	move{Direction}{}
+		based on the direction, this program will take the HashMap assigned for the 
+		direction, check to see if there is a keyValue with the currentRoom, if there
+		is then assign the currentRoom to be the value of the keyValue of the currentRoom
+		
+	askForNextAction{}
+		returns what the user inputs as the next action as a String
+	printCurrentRoomDescription{}
+		prints the current Room Description as of the most recent action.
+	askUserForSavedGame{}
+		first prompt that is entered, not included for this project, but was originally
+		designed for implementation, still looking to do so.
+	generatePlayer{}
+		generates a a player, for the explicit purpose of later being able to save an .xml
+		file that could then be read in, aka inventory.
+	parsePlayerXML{}
+		parses the info in the Player.xml, and assigns the values to the correct fields
+		in the Player class.
+	parseItemsXML{}
+		assigns values to items, necessary for their assignment to rooms
+	parseRoomsXML{}
+		parses xml to assign values to rooms from xml.
+	generateItems{}
+		generates the necessary Items, and assigns them to rooms based on xml
+	generateDirectionalMaps{}
+		generates all four directional maps, that will be used, based on the 
+		directionalMapIndices. Uses generateDirectionalMap to do so.
+	generateDirectionalMap{}
+		creates an individual Map based on given Map, and the primitive map.
+	createMapIndices{}
+		used to create numerical based maps from the arrays, that will then be used to 
+		make the overall maps.
+	createDirectionalMapIndices{}
+		used by createMapIndices, similarly to generateDirectionalMap
+	
+Class Room
+	Room{}//Constructor
+	setOriginalObject{}//setter
+	setDescription{}//setter
+	setObjects{}//setter
+	getRoomWinDescription{}//setter
+	setRoomDescriptionAll{}//setter
+	setRoomDescriptionPreAction{}//setter
+	setRoomDescriptionPostAction{}//setter
+	setRoomDescriptionFirst{}//setter
+	setRoomWinDescription{}//setter
+	getObjects{}//getter
+	addObjectToRoom{}
+		method used to add an object to the objects HashSet.
+	removeObjectFromRoom{}
+		method used to remove an object from the objects HashSet
+	printAvailableCommands{}
+		prints the available items. plus take, used when the printAvailable commands
+		from the Game class is used.
+	equals{}
+		used to create an equals that excludes the HashSet of objects, but is the same
+		for everything else. This is so comparisons, when moving from room to room
+		is able to be done.
+	getRoomDescription{}
+		this is how all print statements are handled, through visits to room, or based on 
+		objects in the room.
+	
+Class Player
+	Player{}//constructor
+	setInventory{}//setter
+	getInventory{}//getter
+	addToInventory{}
+		add Item to inventory HashSet
+	removeFromInventory{}
+		remove Item from inventory HashSet
+	addToRoomsVisited{}
+		add current Room to roomsVisited.
+	getRoomsVisited{}//getter
+	printAvailableCommands{}
+		prints the available commands based on player, essentially based on the player's
+		inventory
+	setRoomsVisited{}//setter
+	printInventory{}
+		prints inventory
+	printCurrentScore{}
+		prints current score, base on current score being the rooms the player has visited
+		the player gets additional points for the items in his inventory.
+		If they win the game, they will gain the points back for which they have in the room
+		I have changed the algorithm, by which the project Specified.
+
+Class Item
+	equals{}
+	getItemLocation{}//getter
+	setItemLocation{}//setter
+	Item{}//constructor
+	setName{}//setter
+	setDescription{}//setter
+	getName{}//getter
+	toString{}//toString

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Game>
+    <room id = "0">
+        <roomdescriptionall>
+            You are in a dark cave. In the middle, there is a cauldron boiling.
+            With a clasp of thunder, three witches suddenly appear before you.</roomdescriptionall>
+        <roomdescriptionfirst>
+            The witches speak in unison:
+            "Mortal, we have summoned thee, make haste!
+            And go forth into the farrow'd waste.
+            Find eye of newt, and toe of frog,
+            And deliver thus to this Scottish bog.
+            Lizard 's leg, and owlet's wing,
+            And hair of cat that used to sing.
+            These things we need t' brew our charm;
+            Bring them forth -and suffer no 'arm.
+            Leave us and go!
+            'Tis no more to be said,
+            Save if you fail, then thou be stricken, dead."</roomdescriptionfirst>
+        <roomdescription>
+            The witches stand before you, glaring; they seem to be expecting something from you.</roomdescription>
+        <roomWindescription>
+            The witches look at your items with suspicion, but decide to go
+            through with the incantation of the spell:
+            "Take lizard's leg and owlet's wing,
+            And hair of cat that used to sing.
+            In the cauldron they all shall go;
+            Stirring briskly, to and fro.
+            When the color is of a hog,
+            Add eye of newt and toe of frog.
+            Bubble all i' the charmed pot;
+            Bubble all 'til good and hot.
+            Pour the broth into a cup of stone,
+            And stir it well with a mummy's bone."
+            You take the resulting broth offered to you and drink...
+            As the fog clears, you find yourself at a computer terminal; your adventure is at an end.</roomWindescription>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+
+
+    </room>
+    <room id = "1">
+
+        <roomdescriptionall>
+            You're transported back in time ... you find yourself in Georgia during the midst of a
+            congressional campaign.</roomdescriptionall>
+        <roomdescriptionpreaction>
+            There is a campaign poster of Newt Gingrich, the Speaker of the House of Representatives,
+            on the wall, with his large eyes looking right at you.</roomdescriptionpreaction>
+        <roomdescriptionpostaction>
+            There is a defaced poster of Newt Gingrich on the wall.</roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+        <roomWindescription></roomWindescription>
+
+    </room>
+    <room id = "2">
+        <roomdescriptionall>
+            This is a large marketplace. Giraffes are bouncing on the stalls and pink elephants in
+            tutus are waltzing gently around the villagers as they shop.</roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+    </room>
+    <room id = "3">
+        <roomdescriptionall>
+            This is a nice stairwell. There are some lovely stairs leading upwards. There are lizard
+            remains on the stairs.</roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+    </room>
+    <room id = "4">
+
+        <roomdescriptionall>
+            The room seems to be that of your Grandmother's old house, you can smell what can only be
+            fresh-baked cookies.</roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+    </room>
+    <room id = "5">
+
+        <roomdescriptionall>AHHHHHHHHH It's dark in here!!!</roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+    </room>
+    <room id = "6">
+        <roomdescriptionall></roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription>The scene seems to be over now.</roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst>
+            You find yourself walking into a scene where the cast of Monty Python's Flying Circus is
+            performing the "Crunchy Frog" sketch. You see the confectioner as he replies, "If we took
+            the bones out it wouldn't be crunchy now, would it?" You see a box of "Crunchy Frog" chocolates,
+            the contents of which contains a dozen nicely cleaned whole frogs that have been carefully
+            hand-dipped in the finest chocolate.</roomdescriptionfirst>
+    </room>
+    <room id = "7">
+
+        <roomdescriptionall>The zoo is a great place to be... when you are looking into the cages.</roomdescriptionall>
+        <roomdescriptionpreaction>Remnants of yesterday's dinner are strewn all about.</roomdescriptionpreaction>
+        <roomdescriptionpostaction>There isn't as much dinner here anymore.</roomdescriptionpostaction>
+        <roomdescription></roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst></roomdescriptionfirst>
+    </room>
+    <room id = "8">
+        <roomdescriptionall></roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription>
+            As you step through the time portal, your head begins to spin you're disoriented and then
+            awaken. You find yourself at the outside door of a dormitory kitchen. Listening, you hear
+            the Chef yelling, "Stop! Stop!" while several cats inside are singing a serenade of the
+            "Meow Mix" commercial theme. Suddenly, the repeated thump of a cleaver puts an abrupt end
+            to the music.</roomdescription>
+        <roomWindescription></roomWindescription>
+        <roomdescriptionfirst>
+            As you step through the time portal, your head begins to spin you're disoriented and then
+            awaken. You find yourself at the outside door of a dormitory kitchen. Listening, you hear
+            the Chef yelling, "Stop! Stop!" while several cats inside are singing a serenade of the
+            "Meow Mix" commercial theme. Suddenly, the repeated thump of a cleaver puts an abrupt end
+            to the music.</roomdescriptionfirst>
+    </room>
+    <room id = "9">
+        <roomdescriptionall></roomdescriptionall>
+        <roomdescriptionpreaction></roomdescriptionpreaction>
+        <roomdescriptionpostaction></roomdescriptionpostaction>
+        <roomdescription>
+            You are in the kitchen. Looking out into the cafeteria, you see students reaching for
+            Pepto-Bismol while trying to stomach the latest version of the Chef's Surprise. You see
+            the Chef as he finishes dumping fresh meat into his 50-quart stewing pot. There are clumps
+            of cat hair on the butcher's block. You hear the Chef muttering to himself, "Prepared
+            properly, cat tastes much like chicken...</roomdescription>
+        <roomWindescription></roomWindescription>
+
+        <roomdescriptionfirst>
+            You are in the kitchen. Looking out into the cafeteria, you see students reaching for
+            Pepto-Bismol while trying to stomach the latest version of the Chef's Surprise. You see
+            the Chef as he finishes dumping fresh meat into his 50-quart stewing pot. There are clumps
+            of cat hair on the butcher's block. You hear the Chef muttering to himself, "Prepared
+            properly, cat tastes much like chicken...</roomdescriptionfirst>
+
+    </room>
+</Game>

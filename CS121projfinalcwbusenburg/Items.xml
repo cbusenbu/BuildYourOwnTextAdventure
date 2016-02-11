@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Game>
+    <Item id = "0">
+        <Name>LEG</Name>
+        <description></description>
+        <roomLocation>3</roomLocation>
+    </Item>
+
+    <Item id = "1">
+        <Name>WING</Name>
+        <description></description>
+        <roomLocation>7</roomLocation>
+    </Item>
+
+    <Item id = "2">
+        <Name>HAIR</Name>
+        <description></description>
+        <roomLocation>9</roomLocation>
+    </Item>
+
+    <Item id = "3">
+        <Name>EYE</Name>
+        <description>An eye of Newt Gingrich from a poster, you must be desperate, or very creative.</description>
+        <roomLocation>1</roomLocation>
+    </Item>
+
+    <Item id = "4">
+        <Name>TOE</Name>
+        <description></description>
+        <roomLocation>6</roomLocation>
+    </Item>
+
+</Game>
+
